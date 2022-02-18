@@ -106,17 +106,21 @@
 		                        </div>
 			                    <div class="table-responsive">
 			                    	<center>
-			                    	<table border="1">
+			                    	<table cellpadding="5">
 			                            <?php $kolom = 4; $i=1; foreach ($data_produk as $row_produk) { 
 										    if(($i) % $kolom== 1) { ?>
 										    <tr>
 										    <?php }  ?>
-										    <td align="center" width="300px">
-										    	<img src="<?php echo $row_produk->url_gambar; ?>" width="100%" /><br>
-										    	<h1><?php echo $row_produk->nama_produk; ?></h1><br>
-										    	Rp <?php echo $row_produk->harga; ?><br><br>
-										    	<?php echo $row_produk->detail_produk; ?><br><br>
-										    	<button class="btn btn-info">Beli</button><br><br>
+										    <td align="center" width="300px" >
+										    	<table style="border-right: 3px dashed; border-top: 3px dashed; border-bottom: 3px dashed; border-left: 3px dashed;">
+										    	<tr align="center"><td>
+											    	<img src="<?php echo $row_produk->url_gambar; ?>" width="100%" /><br>
+											    	<h1><?php echo $row_produk->nama_produk; ?></h1><br>
+											    	Rp <?php echo $row_produk->harga; ?><br><br>
+											    	<?php echo $row_produk->detail_produk; ?><br><br>
+											    	<button class="btn btn-info">Beli</button><br><br>
+										    	</td></tr>
+										    	</table>
 										    </td>
 										    <?php // echo '<td align="center" width="300px"><img src="img/'.$data['gambar'].'" width="50%" /><br><b>'.$data['nama_buku'].'</b></td>';
 										    if(($i) % $kolom== 0) {  ?>  
