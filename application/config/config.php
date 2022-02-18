@@ -378,7 +378,7 @@ $config['encryption_key'] = 'order-mgt2018';
 |
 */
 $config['sess_driver'] = 'files';
-$config['sess_cookie_name'] = 'order-mgt';
+$config['sess_cookie_name'] = 'tes_majoo';
 $config['sess_expiration'] = 7200;
 $config['sess_save_path'] = BASEPATH . 'sessions/';
 $config['sess_match_ip'] = FALSE;

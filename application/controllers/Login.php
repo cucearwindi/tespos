@@ -27,7 +27,7 @@ class Login extends CI_Controller {
 		// echo $username."<br>".$password;exit();
 		
 		// $check_login_result = $this->m_users->check_login($user_id);
-		$check_login_result = $this->m_users->check_login($username, $password);
+		$check_login_result = $this->m_users->check_login($username, md5($password));
 		if ($check_login_result == TRUE) {
 
 			// set session
